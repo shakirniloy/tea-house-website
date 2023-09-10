@@ -25,6 +25,8 @@
                     colors: {
                         clifford: '#da373d',
                         golden: '#FFF082',
+                        yellow: 'rgba(230, 166, 35, 0.10)',
+                        'light-yellow': 'rgba(87, 118, 57, 0.10)'
                     }
                 }
             }
@@ -67,7 +69,7 @@
             </div>
         </div>
     </header>
-    <main class="container mx-auto">
+    <main class="container mx-auto xl:px-32">
         <!-- featured section -->
         <section class="text-center my-24">
             <h2 class="text-4xl font-extrabold mb-5">Our Featured Products</h2>
@@ -120,7 +122,33 @@
                 </div>
             </div>
         </section>
-
+        <!-- fresh tea section -->
+        <section class="my-24">
+            <div class="flex flex-col-reverse lg:flex-row gap-12 items-center">
+                <div class="flex-1 grid grid-cols-2 grid-rows-3 gap-7">
+                    <div class="bg-gradient-to-l from-[#F00] to-[#FF8938] rounded-xl opacity-10"></div>
+                    <div class="bg-yellow row-span-2 rounded-xl flex items-center justify-center py-10">
+                        <img src="./images/fresh-1.png" alt="">
+                    </div>
+                    <div class="bg-light-yellow row-span-2 rounded-xl flex items-center justify-center py-10">
+                        <img src="./images/fresh-2.png" alt="">
+                    </div>
+                    <div class="bg-gradient-to-r from-[#D9D9D9] to-[rgba(255, 255, 255, 0.00)] rounded-xl"></div>
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-5xl font-extrabold mb-5">Great Tea, Freshly Presented</h2>
+                    <p class="font-medium leading-7 mb-7">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                    <div class="mb-5">
+                        <h4 class="text-xl font-extrabold mb-2">Unique Taste</h4>
+                        <p class="font-medium leading-6">A Unique and different style from other teapots gives a luxurious and minimalist impression</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-extrabold mb-2">Premium Quality</h4>
+                        <p class="font-medium leading-6">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
