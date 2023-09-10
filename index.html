@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea house</title>
+    <!-- manro google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/tea-cup.png" type="image/x-icon">
+    <!-- daisy ui and tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/5e38f42452.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom class -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        golden: '#FFF082',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom styles -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-5">
+                <div class="flex-1">
+                    <img src="./images/banner.png" class="max-w-full" />
+                    <!-- ratings badge -->
+                    <div
+                        class="flex items-center gap-4 shadow-[0_7px_50px_0_rgba(0,0,0,0.06)] rounded-xl py-4 px-7 bg-white w-64 scale-75 md:scale-100 relative -top-16 left-8 sm:-top-28 sm:left-20">
+                        <i class="fa-solid fa-star text-4xl text-golden"></i>
+                        <div>
+                            <h3 class="text-3xl font-extrabold">5.00</h3>
+                            <p class="font-semibold">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h1 class="text-7xl  font-extrabold leading-[100px]">
+                        It's good <br>
+                        tea time at The
+                        Tea House
+                    </h1>
+                    <p class="py-6 text-lg font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
+                        To Your Taste Buds.</p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
