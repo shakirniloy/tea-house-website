@@ -26,7 +26,11 @@
                         clifford: '#da373d',
                         golden: '#FFF082',
                         yellow: 'rgba(230, 166, 35, 0.10)',
-                        'light-yellow': 'rgba(87, 118, 57, 0.10)'
+                        'light-yellow': 'rgba(87, 118, 57, 0.10)',
+                        'gradient-start': '#F00',
+                        'gradient-end': '#FF8938',
+                        'footer-gradient-start': 'rgba(255, 0, 0, 0.10)',
+                        'footer-gradient-end': 'rgba(255, 137, 56, 0.10)'
                     }
                 }
             }
@@ -41,7 +45,7 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto">
+    <header class="container mx-auto py-14 px-4">
         <div class="hero">
             <div class="hero-content flex-col-reverse lg:flex-row-reverse gap-5">
                 <div class="flex-1">
@@ -64,12 +68,15 @@
                     </h1>
                     <p class="py-6 text-lg font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction
                         To Your Taste Buds.</p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn text-white bg-gradient-to-l from-gradient-start to-gradient-end">
+                        Explore More
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
-    <main class="container mx-auto xl:px-32">
+    <main class="container px-4 mx-auto xl:px-32">
         <!-- featured section -->
         <section class="text-center my-24">
             <h2 class="text-4xl font-extrabold mb-5">Our Featured Products</h2>
@@ -158,8 +165,8 @@
         </section>
         <!-- client section -->
         <section
-            class="my-24 bg-gradient-to-l from-[#F00] to-[#FF8938] rounded-xl flex flex-col lg:flex-row items-end lg:items-center lg:justify-between py-20 gap-48 sm:px-16">
-            <div class="flex-1">
+            class="my-24 bg-gradient-to-l from-gradient-start to-gradient-end rounded-xl flex flex-col lg:flex-row items-end lg:items-center lg:justify-between py-20 gap-48 sm:px-16">
+            <div class="flex-1 p-2">
                 <h2 class="font-extrabold text-5xl text-[#F4F4F4]">Meet Our Super Clients</h2>
                 <p class="leading-7 font-medium pt-5 pb-7 text-[#F4F4F4]">There are many variations of passages of Lorem
                     Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
@@ -267,8 +274,53 @@
             </div>
         </section>
     </main>
-    <footer>
-
+    <footer class="py-40 px-10 lg:px-40 bg-gradient-to-l from-footer-gradient-start to-footer-gradient-end text-base-content">
+        <div class="flex gap-3 flex-col md:flex-row justify-between items-center my-24 container mx-auto">
+            <div>
+                <img src="./images/cup.png" alt="">
+            </div>
+            <div class="flex items-center gap-10">
+                <p>Ready to get strated?</p>
+                <button class="btn text-white bg-gradient-to-l from-gradient-start to-gradient-end">Get Started</button>
+            </div>
+        </div>
+        <div class="footer justify-between container mx-auto">
+            <nav>
+                <header class="footer-title">Services</header>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Company</header>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <header class="footer-title">Legal</header>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+                <header class="footer-title">Newsletter</header>
+                <fieldset class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com" class="p-3 bg-transparent border-b-2 border-red-400 outline-none   " />
+                        <button class="btn absolute top-0 right-0 rounded-full  bg-gradient-to-l from-gradient-start to-gradient-end text-white"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <aside class="text-center mt-10 container mx-auto">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </aside>
     </footer>
 </body>
 
